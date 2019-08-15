@@ -7,5 +7,5 @@ ADD . /
 
 WORKDIR /
 
-CMD python /greeter_client.py ${ADDRESS}:${PORT}
-# CMD cat -vet greeter_client.py
+#CMD python /greeter_client.py ${ADDRESS}:${PORT}
+CMD ["/bin/sh", "-c", "/greeter_client.py ${ADDRESS}:${PORT}"]
