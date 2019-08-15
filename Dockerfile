@@ -7,7 +7,7 @@ ADD . /
 
 WORKDIR /
 
-ENV ADDRESS 1.1.1.1
-ENV PORT 1
+ENV ADDRESS hello-world
+ENV PORT 31371
 
 CMD ["/bin/sh", "-c", "/greeter_client.py ${ADDRESS}:${PORT}"]
