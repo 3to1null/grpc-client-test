@@ -7,5 +7,7 @@ ADD . /
 
 WORKDIR /
 
-#CMD python /greeter_client.py ${ADDRESS}:${PORT}
+ENV ADDRESS 1.1.1.1
+ENV PORT 1
+
 CMD ["/bin/sh", "-c", "/greeter_client.py ${ADDRESS}:${PORT}"]
